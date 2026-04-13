@@ -1,36 +1,29 @@
-# Shekhar Gowler Portfolio (GitHub Pages)
+# Shekhar Gowler Portfolio (Bento Style)
 
-This repository contains a responsive personal portfolio website inspired by the clean Bento-style layout from the Bentofolio design system.
+A dark, modern, Bento-style personal portfolio inspired by the `bentofolio-react-black` design language.
 
 ## Local preview
-
-Open `index.html` directly in your browser, or run a local static server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
+Visit `http://localhost:8080`.
 
-## Deploy to GitHub Pages (autopilot-ready)
+## Deploy to GitHub Pages
 
-1. Push this repository to GitHub.
-2. In GitHub, open **Settings → Pages**.
-3. Set **Source** to **GitHub Actions**.
-4. Ensure your default branch is `main`.
-5. Push any commit to `main` (or run the workflow manually from Actions).
-6. Wait for the **Deploy static portfolio to GitHub Pages** workflow to finish.
+1. Push this project to your GitHub repository (example: `vickedtunez/Gowler-BA`).
+2. In GitHub, go to **Settings → Pages**.
+3. Set Source to **GitHub Actions**.
+4. Ensure default branch is `main`.
+5. Push to `main` to trigger deployment workflow.
 
-### Public URL format
+## GitHub Pages URL
 
-- Project site URL: `https://<github-username>.github.io/<repo-name>/`
-- If the repo is named `Gowler-BA`, your URL is:
-  - `https://<github-username>.github.io/Gowler-BA/`
+For repository `vickedtunez/Gowler-BA`, the public URL is:
 
-### Expected URL for this repo naming
+- `https://vickedtunez.github.io/Gowler-BA/`
 
-If your GitHub username is `gowler-ba` and repo is `Gowler-BA`, the live URL will be:
+If repository/username changes, use:
 
-- `https://gowler-ba.github.io/Gowler-BA/`
-
-> Note: The exact final domain depends on the GitHub account and repository that this code is pushed to.
+- `https://<github-username>.github.io/<repo-name>/`
