@@ -1,0 +1,169 @@
+:root {
+  --bg: #f3f5fa;
+  --card: #ffffff;
+  --text: #1f2b46;
+  --muted: #5f6b85;
+  --brand: #233f7b;
+  --border: #dbe2f2;
+  --shadow: 0 14px 30px rgba(35, 63, 123, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(160deg, #eef2ff 0%, #f9fbff 50%, #f3f5fa 100%);
+  color: var(--text);
+}
+
+.site-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  padding: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  letter-spacing: 0.02em;
+  color: var(--brand);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.contact a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.about,
+.competencies,
+.education,
+.community {
+  padding: 1.5rem;
+}
+
+.about {
+  grid-column: span 5;
+}
+
+.competencies {
+  grid-column: span 7;
+}
+
+.experience {
+  grid-column: span 12;
+  padding: 1.5rem;
+}
+
+.education {
+  grid-column: span 7;
+}
+
+.community {
+  grid-column: span 5;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: var(--brand);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+p,
+li {
+  color: var(--text);
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.role-header span,
+.tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+article + article {
+  border-top: 1px dashed var(--border);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .about,
+  .competencies,
+  .education,
+  .community {
+    grid-column: span 12;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .contact {
+    justify-content: flex-start;
+  }
+
+  .role-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
